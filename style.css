@@ -4,16 +4,31 @@ body {
   padding: 0;
   background-color: #f4f4f4;
   color: #333;
+  animation: fadeIn 1s ease-in-out;
 }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 .cv-header {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   background-color: #0073e6;
   color: white;
   text-align: center;
   padding: 20px;
+  animation: slideDown 1s ease-in-out;
 }
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
 .cvBox {
   display: flex;
   flex-wrap: wrap;
@@ -24,27 +39,60 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
+
+.cvBox:hover {
+  transform: scale(1.02);
+}
+
 .cv-section {
   flex: 1;
   min-width: 280px;
   padding: 15px;
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out forwards;
 }
+
+@keyframes fadeInUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
 .cv-section__title {
   border-bottom: 2px solid #0073e6;
   padding-bottom: 5px;
   margin-bottom: 15px;
   color: #0073e6;
+  position: relative;
 }
-.cv-section a {
-  color: #0073e6;
-  text-decoration: none;
+
+.cv-section__title::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #0073e6;
+  bottom: -2px;
+  left: 0;
+  transition: width 0.5s;
 }
+
+.cv-section:hover .cv-section__title::after {
+  width: 100%;
+}
+
 .profile-image img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  transition: transform 0.3s;
 }
+
+.profile-image img:hover {
+  transform: scale(1.1);
+}
+
 @media (max-width: 768px) {
   .cvBox {
     flex-direction: column;
