@@ -1,32 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV</title>
-</head>
-<body>
-
-    <header>
-        <h1>Mon CV</h1>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Feras Altaleb</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="cv-header">
+      <div class="profile-image">
+        <img src="imgCv.png" alt="Photo cv for Feras Altaleb" />
+      </div>
+      <div>
+        <h1>Feras Altaleb</h1>
+        <p>Développeur Web et Web Mobile</p>
+      </div>
     </header>
+    <div class="cvBox">
+      <div class="cv-section">
+        <h2 class="cv-section__title">À propos de moi</h2>
+        <p>
+          Passionné par le développement web et mobile, j'apporte mes
+          compétences techniques et mon esprit créatif à chaque projet.
+        </p>
+      </div>
+      <div class="cv-section">
+        <h2 class="cv-section__title">Contact</h2>
+        <p>
+          Email:
+          <a href="mailto:feras.altalib@gmail.com">feras.altalib@gmail.com</a>
+        </p>
+        <p>Téléphone: 07 80 77 33 02</p>
+        <p>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/feras-altaleb/">feras-altaleb</a>
+        </p>
+        <p>Portfolio: <a href="https://www.feras.fr">feras.fr</a></p>
+      </div>
+    </div>
 
-    <nav>
+    <div class="cvBox">
+      <section class="cv-section">
+        <h2 class="cv-section__title">Compétences</h2>
         <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <li>JavaScript / PHP</li>
+          <li>React / Next.js</li>
+          <li>Symfony</li>
+          <li>Kotlin / Swift</li>
+          <li>MySQL / MongoDB</li>
+          <li>Bootstrap</li>
         </ul>
-    </nav>
-
-    <section>
-        <h2>Accueil</h2>
-        <p>Bienvenue sur mon site web. Vous trouverez ici mon CV et mes coordonnées.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2020 - Mon CV</p>
-    </footer>
-    
-</body>
+      </section>
+      <section class="cv-section">
+        <h2 class="cv-section__title">Qualités</h2>
+        <ul>
+          <li>Travail en équipe</li>
+          <li>Grande adaptabilité</li>
+          <li>Esprit logique, apprend vite</li>
+          <li>Bon relationnel</li>
+        </ul>
+      </section>
+      <section class="cv-section">
+        <h2 class="cv-section__title">Langues</h2>
+        <p>
+          Français (B2) | Anglais (B1) | Arabe (Langue maternelle) | Tchèque
+          (B2)
+        </p>
+      </section>
+    </div>
+    <div class="cvBox">
+      <section class="cv-section">
+        <h2 class="cv-section__title">Expériences</h2>
+        <div>
+          <h3>Stage en agence web - Web Media Com</h3>
+          <p>Voiron, France | Mai 2024 - Août 2024</p>
+          <h3>Réceptionniste d'hôtel - Hotel Occidental Praha Wilson</h3>
+          <p>Prague, République Tchèque | 2016 - 2017</p>
+        </div>
+      </section>
+      <section class="cv-section">
+        <h2 class="cv-section__title">Formations</h2>
+        <p>Développement web et web mobile (Bac+2) - Simplon Grenoble (2024)</p>
+        <p>Certification CMS (WordPress) - Simplon Grenoble (2023)</p>
+        <p>Passerelle - Étudiants en exil - CUEF Grenoble (2022 - 2023)</p>
+        <p>Génie civil - Czech Technical University, Prague (2017 - 2018)</p>
+        <p>Génie civil - Albaath University, Syrie (2009 - 2012)</p>
+      </section>
+    </div>
+  </body>
 </html>

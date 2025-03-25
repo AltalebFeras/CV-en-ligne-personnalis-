@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+.cv-header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  background-color: #0073e6;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.cvBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.cv-section {
+  flex: 1;
+  min-width: 280px;
+  padding: 15px;
+}
+.cv-section__title {
+  border-bottom: 2px solid #0073e6;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  color: #0073e6;
+}
+.cv-section a {
+  color: #0073e6;
+  text-decoration: none;
+}
+.profile-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .cvBox {
+    flex-direction: column;
+  }
+}
