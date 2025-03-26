@@ -1,15 +1,21 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(304deg, rgba(34, 193, 195, 1) 0%, rgba(239, 42, 152, 1) 50%, rgba(45, 253, 79, 0.9500393907563025) 100%);
   animation: fadeIn 1s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .cv-header {
@@ -25,8 +31,15 @@ body {
 }
 
 @keyframes slideDown {
-  from { transform: translateY(-50px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .cvBox {
@@ -37,13 +50,13 @@ body {
   margin: 20px auto;
   background: white;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
 
 .cvBox:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 
 .cv-section {
@@ -55,8 +68,15 @@ body {
 }
 
 @keyframes fadeInUp {
-  from { transform: translateY(30px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .cv-section__title {
@@ -65,21 +85,6 @@ body {
   margin-bottom: 15px;
   color: #0073e6;
   position: relative;
-}
-
-.cv-section__title::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background: #0073e6;
-  bottom: -2px;
-  left: 0;
-  transition: width 0.5s;
-}
-
-.cv-section:hover .cv-section__title::after {
-  width: 100%;
 }
 
 .profile-image img {
@@ -92,6 +97,21 @@ body {
 .profile-image img:hover {
   transform: scale(1.1);
 }
+
+
+
+.card {
+  border: 1px solid black;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+  margin: 10px;
+ 
+  background-color: #f4f4f4;
+
+}
+
 
 @media (max-width: 768px) {
   .cvBox {
